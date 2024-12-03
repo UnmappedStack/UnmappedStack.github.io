@@ -1,6 +1,4 @@
-# UnmappedStack (Jake Steinburger)
-
-I like low level development. Programming by day, trying but failing to sleep by night.
+I'm Jake, and I like low level development. Programming by day, trying but failing to sleep by night.
 
 Maybe a blog will come someday, I'm not sure. Contact me at `jake [dot] stbu [at] gmail [dot] com`
 

@@ -6,7 +6,7 @@ I do:
 
 - C
 - x86_64 Assembly
-- Learning Rust
+- Rust
 - Python for tiny scripts
 - Anything that I feel like learning at the time
 
@@ -15,14 +15,15 @@ I use:
 - OS: Arch Linux
 - Window manager: i3wm
 - Terminal emulator: Alacritty
-- TUI WM: tmux
-- Code editor: Vim
-- Shell: zsh
+- Terminal multiplexer: tmux
+- Code editor: Neovim
+- Shell: zsh + omz
 
 I've written:
 
-- An x86_64 OS kernel from scratch
-- A compiler from scratch (targetting 64 bit NASM assembly)
-- A PDP-8 emulator
-- Various machine learning projects
+- An x86_64 OS kernel from scratch: [TacOS](https://github.com/UnmappedStack/TacOS)
+- A compiler backend: [UYB](https://github.com/UnmappedStack/UYB)
+- A PDP-8 emulator: [pemu](https://github.com/UnmappedStack/pemu)
+- Various machine learning projects: [peKNN](https://github.com/UnmappedStack/peKNN), [autoParam](https://github.com/UnmappedStack/autoParam)
+- An x86_64 to arm64 assembly transpiler: [Vodka](https://github.com/UnmappedStack/vodka)
 - A search engine from scratch

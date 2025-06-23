@@ -28,4 +28,4 @@ I've learned about file systems (particularly VFSes), memory management (virtual
 Hopefully this blog post was at least a little interesting, it was my first one so it might not be perfect, I'm not much of a writer but do want to write up my progress somewhere.
 
 ### If my article was interesting...
-<iframe src="subscribe.html" style="border: 0px solid transparent"></iframe>
+<iframe src="https://unmappedstack.dev/subscribe.html" style="border: 0px solid transparent; width: 100vw; height: 200%"></iframe>

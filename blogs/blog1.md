@@ -26,3 +26,6 @@ And so, I begun [TacOS](https://github.com/UnmappedStack/TacOS)! This is my late
 I've learned about file systems (particularly VFSes), memory management (virtual and physical), scheduling (mostly round robin so far), and have seen some other people's amazing projects. I can't wait to get TacOS further and start running more powerful ports!
 
 Hopefully this blog post was at least a little interesting, it was my first one so it might not be perfect, I'm not much of a writer but do want to write up my progress somewhere.
+
+### If my article was interesting...
+<iframe src="subscribe.html" style="border: 0px solid transparent"></iframe>

@@ -29,3 +29,7 @@ There's nothing more to say. It's great.
 
 ## Less technically, though?
 "I don't really love how many hobby OSes are Unix-like, do something original". This seems to be a pretty common sentiment. But here's my view. Why does it matter if you're doing the same as everyone else? It's not like you're trying to make the next big thing (I hope not at least). You're trying to understand your system and the technology that makes it all possible. And in many cases, said system *is* Unix like. So isn't it fulfilling the entire purpose of OSDev by making something that helps you understand what you use yourself?
+
+
+### If my article was interesting...
+<iframe src="subscribe.html" style="border: 0px solid transparent"></iframe>

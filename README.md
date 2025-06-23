@@ -1,8 +1,8 @@
 I'm Jake, and I like low level development. Programming by day, trying but failing to sleep by night.
 
-Maybe a blog will come someday, I'm not sure. Contact me at `jake [dot] stbu [at] gmail [dot] com`
+I have a little [blog](https://unmappedstack.dev/blog), it's mostly about OS/kernel development but other stuff too. Contact me at `jake [dot] stbu [at] gmail [dot] com`
 
-You can also check out my [GitHub](https://github.com/UnmappedStack), my [Reddit](https://reddit.com/u/Unmappedstack), and my [Discord server](https://discordapp.com/users/.jakedoesstuff).
+You can also check out my [GitHub](https://github.com/UnmappedStack), my [Reddit](https://reddit.com/u/Unmappedstack), and my [Discord](https://discordapp.com/users/.jakedoesstuff).
 
 I do:
 

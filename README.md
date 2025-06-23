@@ -2,6 +2,8 @@ I'm Jake, and I like low level development. Programming by day, trying but faili
 
 Maybe a blog will come someday, I'm not sure. Contact me at `jake [dot] stbu [at] gmail [dot] com`
 
+You can also check out my [GitHub](https://github.com/UnmappedStack), my [Reddit](https://reddit.com/u/Unmappedstack), and my [Discord server](https://discordapp.com/users/.jakedoesstuff).
+
 I do:
 
 - C

@@ -8,7 +8,7 @@ Not a bad point. Why don't I use Rust? Well, at the *start* there were a few mai
  - C is simple. Kernels are complex, so I wanted to keep things that didn't need to be complex, simple.
  - I just am more used to C. I had previously used Rust in smaller projects such as a toy compiler, but not enough to be comfortable with its ins and outs. Meanwhile, I was (and still am) more comfortable with C.
 
-But, literally 11 later, I decided something. I *did* want to do a rewrite in Rust, but not because of Rust itself. See, TacOS is my 3rd OS project, and while it's a lot better than my older ones, it still has some bits of code from my older projects, and those bits of code are not good at all. They polute the codebase. The reason? All of them were written in C, so it was too easy to use my old code. Reimplementing it in Rust, however, forced me to rewrite it.
+But, literally 11 days later, I decided something. I *did* want to do a rewrite in Rust, but not because of Rust itself. See, TacOS is my 3rd OS project, and while it's a lot better than my older ones, it still has some bits of code from my older projects, and those bits of code are not good at all. They pollute the codebase. The reason? All of them were written in C, so it was too easy to use my old code. Reimplementing it in Rust, however, forced me to rewrite it.
 
 Rust also had some added benefits:
  - It has a built in `alloc` and `core` crate (which `std` builds upon) which can work in a freestanding environment. This meant all I needed was my own basic physical memory manager, and I was golden, no need to implement things like `Box<>`, `Vec<>`, or others.

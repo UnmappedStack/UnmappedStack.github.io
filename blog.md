@@ -2,6 +2,12 @@
 Mostly tech stuff. Have a look at who I am at my [homepage](https://unmappedstack.dev).
 
 <hr>
+## [The time I tried rewriting my OS in Rust (and why I went back to C)](https://unmappedstack.dev/blogs/blog3)
+
+(Posted 2025/06/24)
+
+Rust is kinda cool, but C beats it in kernelspace any day.
+<hr>
 ## [My little OS kernel development journey](https://unmappedstack.dev/blogs/blog1)
 
 (Posted 2025/06/23)

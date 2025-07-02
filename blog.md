@@ -2,6 +2,12 @@
 Mostly tech stuff. Have a look at who I am at my [homepage](https://unmappedstack.dev).
 
 <hr>
+## [The worse GitHub issues I've ever gotten on my projects](https://unmappedstack.dev/blogs/worst-github-issues)
+
+(Posted 2025/07/02)
+
+Yes, somehow these are real. People are weird.
+<hr>
 ## [The time I tried rewriting my OS in Rust (and why I went back to C)](https://unmappedstack.dev/blogs/rust-rewrite)
 
 (Posted 2025/06/24)

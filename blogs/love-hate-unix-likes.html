@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My love/hate relationship with UNIX-likes</title>
+</head>
+<body>
+
+    <a href="https://unmappedstack.dev/blog">&#x2190; See all my articles</a>
+
+    <h1>My love/hate relationship with UNIX-likes</h1>
+
+    <p>
+        <img src="https://unmappedstack.dev/assets/pdp11.jpeg" alt="A pdp11 running Unix">
+    </p>
+
+    <p>Ahhh Unix. How I wish I was alive early enough to be a hobbyist on a PDP-11 in the early 70s, using the original Unix shell. I guess that's not much of a problem though, I just use its derived OSes instead. I personally run good ol' Arch Linux, and Linux is probably the most iconic Unix-like to still be commonplace.</p>
+
+    <p>Through my OS development journey I've kinda gone backwards and forwards on Unix. Do I hate it for exec/fork? Do I love it for its flexible VFS? Are Unix devs insane or genius? Am I bipolar? Have I forgotten to take my Unix-derived craziness pills?</p>
+
+    <p>Here are my thoughts on the pros and cons of Unix-likes, both on the technical side and the not-so-technical side.</p>
+
+    <h2>The Unix-style VFS</h2>
+    <p><strong><em>Goooooood</em></strong>. You can't tell me you don't want to mount your USB at <code>/dev/sda241</code> while frantically trying to find your drives with <code>lsblk</code> while being scared you'll overwrite it (yes this is a massive exaggeration, it's probably the best solution).</p>
+
+    <p>NT has kinda gone back and forth in following this. At the start, they had a completely lettered VFS, where you mount drives corresponding to a letter. Now, they internally use Unix-style mounting, but still have an abstraction over the top with lettered mounting.</p>
+
+    <p>Personally, I like Unix-style mounting for a VFS. It's flexible. Not as simple to implement, but far easier to use, and the speed only takes quite a minor decrease. Plus, there's so many ways to implement it internally such as a node graph or a mountpoint list. It kinda is just the solution that makes the most sense.</p>
+
+    <h2>exec()/fork()</h2>
+    <p>I have one question for you, Ritchie. When you were planning out exec/fork, <em>were you high??</em> <code>exec/fork</code> is literally the worst method I could think of. It's slow, it's memory inefficient, it's more prone to bugs than <code>spawn()</code> due to being less simple...</p>
+
+    <p>And yes, I get it. It's to follow the Unix philosophy (or at least one of their many philosophies, not the good old "do one thing and do it well"): be flexible. But the tradeoff just isn't worth it!</p>
+
+    <p>The only reason I would use exec/fork instead of spawn in my kernel (which I currently <em>am</em> doing) is that it makes porting some software a bit easier.</p>
+
+    <h2>Unix devices</h2>
+    <p>This is just the best way to handle devices. Anybody who says otherwise hasn't read up on it enough or hasn't implemented it.</p>
+
+    <p>There's nothing more to say. It's great.</p>
+
+    <h2>Less technically, though?</h2>
+    <p>"I don't really love how many hobby OSes are Unix-like, do something original". This seems to be a pretty common sentiment. But here's my view. Why does it matter if you're doing the same as everyone else? It's not like you're trying to make the next big thing (I hope not at least). You're trying to understand your system and the technology that makes it all possible. And in many cases, said system <em>is</em> Unix like. So isn't it fulfilling the entire purpose of OSDev by making something that helps you understand what you use yourself?</p>
+
+    <h3>If my article was interesting...</h3>
+
+    can I send you some emails? 😔 I promise I won't spam 🌳<br><br>
+    <form onsubmit="sub()">
+        <input type="email" id="email" placeholder="email plz" style="padding: 10px;" size="50" required />
+        <button
+            type="submit"
+            style="padding: 10px;">
+            yesss i want <s>rubbish</s> emails!
+        </button><br>
+        <label>
+            <input type="checkbox" />
+            I agree that UnmappedStack is the ultimate dictator (optional but recommended)
+        </label>
+    </form>
+    <br>
+        I'll only ever send you emails with the latest blogs that I think you'll find interesting.<br>
+    <b>
+
+        <i>I will never spam you, and you can unsubscribe at any time through the emails. I don't want to sell you anything.</i>
+    </b>
+    <script>
+        function sub() {
+            const email = document.getElementById("email").value;
+            // security be fucked, I'll put my token in the frontend source if I wanna.
+            // BALLLS TO THE WALLLLLLLL
+            const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiMTFjZGI1NzA3MDU0OGY2YWZlNzNlZDcyNmU0M2IyZTFiYmNlMzQ5ZjhhZTA3MmZkYmNkYzU1OTdlNjAzOWQyYWVlNTY1MDVhOTcwNDY5NTEiLCJpYXQiOjE3NTA2NTQ5NzguNTQ3MzU1LCJuYmYiOjE3NTA2NTQ5NzguNTQ3MzU4LCJleHAiOjQ5MDYzMjg1NzguNTQyNTc1LCJzdWIiOiIxNjI2Njg4Iiwic2NvcGVzIjpbXX0.JFAhO9GcQrAU-q-dp_Pv_x8U2M54TFjKCk-2zTPcOB3K-urOFR7ZYVa8_rHcQ2OAhYQbhG-WBQ6X6c-Ep5U-NNsGw9NPMB5u7lTffn8_A6S8sCQ-9PhlRA2R46_YrI0a_5_xpXvK0xsPRTWr-Ol24CEwlHdaAJznVpLdGpKM_M6O_2RPS08CvjXAIeqEexIo5juJPTEb92VEsBKXtCz_ZSGowzLOzQPr7TCvmd1vPxLwlTkqODo0USxsmY86GH1jGFQsK3nj_QlOGzZQ0ZTWQMkgWPLNg7z39y12gncjaWTDAguO2hSiyvt6-MPBYJBW6UJx3NvpnjS1QYXdTCPXnGx4VHAnVASGRtBsXpFnY5ev6swjJ7eyr67RASbdUGCe63QB-rmGi8o9iZ4GpVH0ctS-MEHidaDizbVlttfrKs6rcgijzMgoFvT-wXiNmu7nQ0IjYeAjh0j6svjqvXMpfIsVQr_j5Sn_C3mi6DWIltgZO5aPkXIbOeAGAn7-hU6XEjp82VfRnW48OLNd1L1Kk1rx8gs6H3oik7NoP_9BlgyRLzl-QhEKm1u8AGK-IrdEFCnQyY7-yfb80Qaz_hUm4V49fgj3uylG11FhC2qmBf1dBWpCjAOim_KsBkOy9FGe-8UqYtAC5YjrLL2wBl2BgYUrRwWCq65UDruWXDu5m-U";
+            fetch('https://connect.mailerlite.com/api/subscribers', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + token,
+                },
+                body: JSON.stringify({
+                    email: email,
+                })
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => alert("error subscribing: " + error));
+            document.write("you subscribed! thanks");
+        }
+    </script>
+</body>
+</html>

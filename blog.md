@@ -2,7 +2,7 @@
 Mostly tech stuff. Have a look at who I am at my [homepage](https://unmappedstack.dev).
 
 <hr>
-## [The worse GitHub issues I've ever gotten on my projects](https://unmappedstack.dev/blogs/worst-github-issues)
+## [The worst GitHub issues I've ever gotten on my projects](https://unmappedstack.dev/blogs/worst-github-issues)
 
 (Posted 2025/07/02)
 

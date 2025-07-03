@@ -1,0 +1,93 @@
+/* Base Styles */
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #222;
+}
+
+a {
+    color: #2a6bbf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin-top: 1.4em;
+    line-height: 1.3;
+}
+
+ul {
+    padding-left: 1.2em;
+    margin: 1em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Form Styles */
+form {
+    margin-top: 1em;
+    padding: 1em;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+input[type="email"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2a6bbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4f91;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    input[type="email"],
+    button {
+        width: 100%;
+    }
+}
